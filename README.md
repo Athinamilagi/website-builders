@@ -50,5 +50,5 @@ npm run dev
 
 ## Live Site
 
-The live site can be accessed [here](https://vercel.com/athinamilagis-projects/website-builders/53fUaFTf5S6G2rNNYuYsN8QSHDJp) .
+The live site can be accessed [here](https://website-builders-3kodzvela-athinamilagis-projects.vercel.app/) .
 
