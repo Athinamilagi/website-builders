@@ -9,4 +9,9 @@ const nextConfig = {
     },
 };
 
+module.exports = {
+    ...nextConfig,
+    output: 'export',
+  }
+
 export default nextConfig;
