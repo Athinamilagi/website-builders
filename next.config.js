@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
-import path from "path";
-import { dirname } from "path";
+const path = require('path');
+const { dirname } = path;
 
 const nextConfig = {
   reactStrictMode: true,
@@ -13,5 +13,3 @@ const nextConfig = {
 module.exports = {
   ...nextConfig
 };
-
-export default nextConfig;
