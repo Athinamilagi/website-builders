@@ -1,0 +1,90 @@
+@import "./variables.module.scss";
+
+.footer {
+  background-color: $header-background;
+  color: $header-text-color;
+  height: 350px;
+
+  ul {
+    li {
+      list-style: none;
+      margin-top: 15px;
+      a {
+        text-decoration: none;
+        color: #b6bdc4;
+        font-weight: 200;
+      }
+    }
+  }
+
+  .header_container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 10px;
+
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    nav {
+      span {
+        font-weight: 600;
+        position: relative;
+        left: 40px;
+      }
+    }
+
+    .location {
+      input {
+        width: 200px;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding: 0 10px;
+        font-size: 16px;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        font-weight: 100;
+      }
+    }
+  }
+
+  .contact_us {
+    margin-top: 25px;
+    span {
+      font-weight: 600;
+      position: relative;
+      left: 40px;
+    }
+  }
+
+  footer {
+    margin-top: 70px;
+    text-align: center;
+  }
+
+  // Footer for Mobile browsers
+  @media (max-width: 428px) {
+    .header_container {
+      font-size: 10px;
+      margin: 15px 0;
+      justify-content: space-between;
+      .location {
+        input {
+          width: 80px;
+        }
+      }
+    }
+
+    .contact_us {
+      margin-top: 35px;
+    }
+
+    footer {
+      font-size: 10px;
+    }
+  }
+}

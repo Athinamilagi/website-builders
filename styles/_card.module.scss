@@ -1,0 +1,203 @@
+@import "./variables.module.scss";
+
+.card_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 260px;
+  border-radius: 10px;
+  color: $header-text-color;
+  position: relative;
+  margin-top: 50px;
+
+  .preferece {
+    width: 140px;
+    height: 34px;
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: $pref-bg;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    img {
+      width: 24px;
+      height: 24px;
+    }
+    .preferece_content {
+      margin-left: 5px;
+    }
+  }
+  small {
+    position: absolute;
+    color: $text;
+    top: 0;
+    left: 0;
+  }
+
+  .img {
+    height: 100%;
+    width: 170px;
+    text-align: center;
+    margin-right: 15px;
+
+    .title {
+      color: $text;
+      margin-top: 30px;
+    }
+  }
+  .main_content {
+    width: 550px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    z-index: 2;
+    .main {
+      .header {
+        margin-top: 15px;
+        display: inline;
+        color: $bar-text-color;
+        font-size: 16px;
+        font-weight: 700;
+      }
+      .about {
+        margin-top: 15px;
+        display: inline;
+        color: $off_amt;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+
+    .highlights {
+      margin-top: 15px;
+      .highlights_title {
+        color: $bar-text-color;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      .highlights_content {
+        margin-left: 10px;
+        margin-right: 20px;
+        color: $text;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 5px;
+      }
+
+      .highlights_button {
+        width: 180px;
+        height: 32px;
+        margin-top: 20px;
+
+        button {
+          background-color: white;
+          border: none;
+          font-size: 14px;
+          font-weight: 400;
+          color: $btn-bg-color;
+        }
+      }
+    }
+  }
+
+  .rating_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    width: 140px;
+    margin-left: 35px;
+    .rating {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      background-color: $card-bg;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+
+      .rating_val {
+        color: $btn-color;
+        font-size: 32px;
+        font-weight: 700;
+        margin: 10px;
+      }
+
+      .rating_title {
+        color: $btn-color;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 8px;
+      }
+
+      .rating_star {
+        width: 70px;
+        height: 15px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+    .rating_btn {
+      width: 242px;
+      margin: 10px;
+      margin-top: 15px;
+      button {
+        width: 100%;
+        height: 48px;
+        background-color: $btn-bg-color;
+        color: white;
+        border-radius: 10px;
+        border: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 428px) {
+  .card_container {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .main_content {
+      .main {
+        .header {
+          display: none;
+        }
+        .about {
+          display: none;
+        }
+      }
+    }
+    .highlights {
+      .highlights_content {
+        display: none;
+      }
+    }
+
+    .rating_container {
+      .rating_btn {
+        width: 100px;
+        height: 30px;
+      }
+    }
+  }
+}

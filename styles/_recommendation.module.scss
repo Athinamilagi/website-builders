@@ -1,0 +1,206 @@
+@import "./variables.module.scss";
+
+.mobile_slider {
+  .slick-slider {
+    .slick-arrow slick-prev:before {
+      background-color: $heading-text-color;
+    }
+  }
+
+  button {
+    z-index: 1;
+  }
+
+  .slick-list {
+    overflow: visible;
+  }
+}
+
+.container_title {
+  color: $heading-text-color;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.container_content {
+  margin-right: 10px;
+  width: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  z-index: 2;
+
+  .item {
+    .item_img {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .offer,
+    .time {
+      width: auto;
+      display: inline;
+      font-size: 14px;
+      color: $btn-color;
+      padding: 5px;
+      background-color: $btn-bg;
+      border-radius: 7px;
+      margin-left: 3px;
+    }
+
+    .item_text {
+      h3 {
+        color: $text;
+      }
+      p {
+        color: $text;
+        width: 70%;
+        margin: 0;
+      }
+    }
+    .amount {
+      margin-top: 15px;
+      p {
+        color: $off_amt;
+        display: inline;
+        font-size: 18px;
+        margin-right: 3px;
+        width: 28px;
+      }
+      small {
+        color: $org_amt;
+        width: 20px;
+        margin-right: 3px;
+        font-size: 13px;
+      }
+      span {
+        color: $off;
+        width: 20px;
+        font-size: 12px;
+      }
+    }
+    .btn {
+      width: 275px;
+      height: 48px;
+      color: #ffffff;
+      margin-top: 20px;
+      z-index: 2;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-color: $btn-bg-color;
+      border-radius: 10px;
+    }
+  }
+
+  //Recommendations for Tablet Devices
+  @media (max-width: 768px) {
+    margin: 0 20px;
+    .item {
+      .btn {
+        width: 200px;
+        height: 40px;
+      }
+    }
+
+    .item_text {
+      h3 {
+        margin-right: 80px;
+      }
+      p {
+        color: $text;
+        width: 80%;
+        margin: 0;
+      }
+    }
+  }
+  @media (max-width: 428px) {
+    margin: 0 20px;
+    .item {
+      .item_text {
+        h3 {
+          margin-right: 170px;
+        }
+      }
+      .btn {
+        width: 200px;
+        height: 40px;
+      }
+    }
+  }
+  @media (max-width: 328px) {
+    margin: 0 20px;
+    .item {
+      .item_text {
+        h3 {
+          margin-right: 120px;
+        }
+      }
+    }
+  }
+}
+
+
+.container_signup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  line-height: 1.5rem;
+  width: 100%;
+
+  p {
+    margin: 0;
+    color: $off_amt;
+    font-size: 32px;
+
+    @media (max-width: 1024px) {
+      font-size: 24px;
+    }
+    @media (max-width: 1440px) {
+      font-size: 28px;
+    }
+  }
+  button {
+    margin-right: 40px;
+    width: 100px;
+    height: 48px;
+    font-size: 14px;
+    color: #ffffff;
+    border: none;
+    background-color: $btn-bg-color;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    @media (max-width: 1024px) {
+      margin-right: 0;
+    }
+    @media (max-width: 1440px) {
+      margin-right: 20px;
+    }
+  }
+  //Recommendations title  for Tablet Devices
+
+  @media (max-width: 768px) {
+    .container_signup {
+      margin: 0;
+      width: 100%;
+      p {
+        font-size: 24px;
+        margin-left: 20px;
+      }
+      button {
+        margin: 0;
+      }
+    }
+  }
+}
